@@ -1,0 +1,16 @@
+
+#graphql
+
+extend type Query {
+  hello: String
+}
+
+type Post {
+  title: String
+  content: String
+}
+
+extend type Mutation {
+  addPost(title: String!, content: String!): Post
+}
+
